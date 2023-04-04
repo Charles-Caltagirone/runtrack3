@@ -19,7 +19,7 @@ $("#filter").on("click", function () {
                 }
                 for (let i = 0; i < pokemon.type.length; i++) {
                     if (type.value == pokemon.type[i]) {
-                        p.append("- Id : " + pokemon.id + " : " + pokemon.name.french + " .");
+                        p.innerHTML += ("- Id : " + pokemon.id + " : " + pokemon.name.french + ".<br>")
                     }
                 }
             })
