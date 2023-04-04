@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: #000;
+}
+/* titre de la page index */
+.titreIndex {
+  /* display: flex; */
+  /* justify-content: center; */
+  text-align: center;
+  margin-top: 2em;
+  font-size: 3em;
+  /* -webkit-text-stroke: 0.2px white; */
+}
+html,
+body {
+  background-color: lightblue;
+
+  height: 100%;
+}
+main {
+  min-height: 65vh;
+  position: relative;
+  /* padding-bottom:100px;   Hauteur du pied de page */
+}
+/* NAV */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+}
+header a {
+  text-decoration: none;
+  padding: 1rem;
+  font-size: 1.2rem;
+  color: #fff;
+}
+header a:hover {
+  text-decoration: underline;
+}
+header i {
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 50px;
+}
+/* #footerPlanning{
+  position: static;
+}
+#footerReser{
+  position: static;
+}
+#footerProfil{
+  position: static;
+} */
+
+footer{
+  position: absolute;
+  text-align: center;
+  /* background-color: black; */
+  padding-bottom: 0;
+  /* bottom:1em;  on le colle en bas */
+  width:100%;
+}
+footer a {
+  text-decoration: none;
+  margin-right: 15px;
+}
+footer i {
+  font-size: 2rem;
+  transform: scale(1);
+  transition: 0.5s;
+  color: #fff;
+}
+footer i:hover {
+  transform: scale(1.5);
+}
+/* CSS RESERVATION FORM */
+textarea {
+  resize: none;
+  width: 100%;
+  height: 4em;
+  outline: none;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid white;
+  border-radius: 3px;
+  font-size: 1rem;
+}
+select {
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+option {
+  color: #000 !important;
+}
+/*  */
+
+@media screen and (max-width: 550px) {
+  header {
+    flex-direction: column;
+  }
+
+  header a {
+    padding: 0.4rem;
+  }
+  nav {
+    margin: auto;
+    text-align: center;
+  }
+  header a:last-child {
+    display: block;
+  }
+}
